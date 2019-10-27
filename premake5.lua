@@ -9,6 +9,7 @@ workspace "Hazel"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
 project "Hazel"
 	location "Hazel"
 	kind "SharedLib"
@@ -22,9 +23,10 @@ project "Hazel"
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
-
+	
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vend/spdlog/include"
 	}
 
