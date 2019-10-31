@@ -10,6 +10,7 @@
 #include<unordered_map>
 #include<sstream>
 #include<unordered_set>
+#include"Hazel/Log.h"
 
 #ifdef HZ_PLATFORM_WINDOWS
 #include<Windows.h>
